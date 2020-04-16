@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+           <form method="get" action="strat.php">  <!--method="get"為網址會帶有 HTML Form 表單的參數與資料。-->
+        帳號：<input type="text" name="name"><br>  <!--input type是控制項  若為text就是輸入文字; 相同name名字則是同類別  不同則是不相干-->
+        性別：<input type="radio" name="gender" value="M">男  <!--input type若為radio就是單選題-->
+        <input type="radio" name="gender" value="F">女
+               <br>
+        興趣：<input type="checkbox" name="interest" value="tv" checked>看電視  <!--input type若為checkbox就是多選題-->
+             <input type="checkbox" name="interest" value="bike" >騎車
+             <input type="checkbox" name="interest" value="movie" checked>看電影 <!--後面checked是預設就先打勾-->
+                <br>   
+           居住地：  <select name="county">    <!--select為下拉式選單-->
+          <option value="hsinchu">新竹</option>  <!--option是選單中的選項-->
+          <option value="taoyuan" selected>桃園</option>
+          <option value="miaoli">苗栗</option>   
+                  
+           </select><br>
+               自傳：<br>
+               <textarea name="autobiography"cols="40" rows="5"> </textarea>     <!--此為文字方塊。cols是寬度;rows是高度-->
+               <input type="submit" value="註冊">    <!--input type若為submit就是原先設定好的註冊鍵  value為顯示文字-->
+               <input type="reset" value="清除">     <!--input type若為reset就是原先設定好的重設鍵  value為顯示文字-->
+
+        </form>
+    </body>
+</html>
