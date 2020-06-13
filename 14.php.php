@@ -1,3 +1,3 @@
 <?php
- echo "hello world!"; //PHP echo 的功能是用來輸出字串
+ echo "hello world!"; //echo 的功能是用來輸出字串
 ?>
